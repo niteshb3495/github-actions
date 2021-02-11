@@ -4,12 +4,12 @@ FROM ubuntu:latest
 #installatio of nginx application
 RUN \
   apt-get update && \
-  apt-get install -y nginx && \
-  echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
-  chown -R www-data:www-data /var/lib/nginx
+  apt-get install -y apache2 #&& \
+#  echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
+#  chown -R www-data:www-data /var/lib/nginx
 
 
-CMD ["nginx"]
+#CMD ["nginx"]
 
 #exposing port 80 of the container
 EXPOSE 80
