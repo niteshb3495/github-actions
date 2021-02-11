@@ -4,7 +4,7 @@ FROM ubuntu:latest
 #installatio of nginx application
 RUN \
   apt-get update && \
-  apt-get install -y nginx telnet && \
+  apt-get install -y nginx && \
   echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
   chown -R www-data:www-data /var/lib/nginx
 
