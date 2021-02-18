@@ -25,6 +25,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build nginx image
         run: |
-        pwd
-        cd ../nginx
-        sh test.sh
+         pwd
+         cd ../nginx
+         sh test.sh
