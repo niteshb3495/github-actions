@@ -26,5 +26,5 @@ jobs:
       - name: Build nginx image
         run: |
          pwd
-         cd ../nginx
+         cd nginx
          sh test.sh
