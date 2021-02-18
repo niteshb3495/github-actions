@@ -1,1 +1,1 @@
-this is test from nginx dir
+echo "this is test from nginx dir"
